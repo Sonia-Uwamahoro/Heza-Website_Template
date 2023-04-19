@@ -1,8 +1,9 @@
 /* -------------- General Style ----------------- */
 
-* {
-    box-sizing: border-box;
-}
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Dosis:wght@200;300&family=Jost:wght@200;300&display=swap');
+
 
 body {
     
@@ -28,34 +29,17 @@ body {
 
 /*  Logo Brand  */
 
-.navbar .navbar-brand {
-  font-size: .9rem;
-  padding: 1px 40px;
-  font-weight: bold;
-  font-family:Arial, Helvetica, sans-serif;
+
+.navbar .navbar-brand img{
+    width: 3.5em;
+
 }
-
-.navbar .navbar-brand b {
-  color: #f6bd60;
-  font-size: 2.5rem;
-  font-weight: 400;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.navbar .navbar-brand {
-  color: #000 !important;
-  text-decoration: none;
-  font-weight: light;
- }
-
-
-
 
 /*  Toggle  */
 
 .navbar button {
   border: none;
-  color: #f6bd60 !important;
+  color: #F1C423 !important;
   margin-top: .6rem;
   padding: .2rem;
   font-size: 1.2rem;
@@ -70,25 +54,26 @@ body {
   transition: color 0.5s;
   text-decoration: none;
   border-bottom: 3px solid transparent;
+  color: #000 !important;
 }
 
 .navbar-nav li :hover{
-  color: #f6bd60 !important;
+  color: #F1C423 !important;
 }
 
 .navbar-nav li a.active {
-  color: #f6bd60 !important;
-  border-bottom: 2px solid #f6bd60;
+  color: #F1C423 !important;
+  border-bottom: 2px solid #F1C423;
 }
 
 #user li a{
-  color: #000 !important;
+  color: #555 !important;
   font-size: 1.1rem;
   border-bottom: none !important;
   text-decoration: none !important;
 }
 #user li a:hover{
-  color: #f6bd60 !important;
+  color: #F1C423 !important;
   border-bottom: none !important;
   text-decoration: none !important;
 }
@@ -127,7 +112,7 @@ body {
 }
 
 .intro b{
-  color: rgb(204, 204, 204);
+  color: #f6bd60;
  
 }
 
@@ -135,8 +120,28 @@ body {
 
 .buttons{
   text-align: center;
-  padding-top: 8rem;
+  padding-top: 10em;
 }
+
+@media only screen and (max-width:900px){
+    .buttons{
+        padding-top: 4em;
+      }
+  }
+  
+  @media only screen and (max-width:383px){
+    .buttons{
+        padding-top: 2.5em;
+      }
+  }
+
+  @media only screen and (max-width:358px){
+    .buttons{
+        padding-top: 0;
+      }
+  }
+  
+  
 .buttons button {
   background-color: #f6bd60;
   border: none;
@@ -181,7 +186,7 @@ body {
 }
 
 .social a{
-  color: #222;
+  color: #555;
   padding: .5rem;
 }
 
@@ -232,7 +237,8 @@ body {
 .about-words p{
   padding-top: .1rem;
   padding-left: 3rem;
-  font-size: .9rem;
+  font-size: 1.7rem;
+  font-family: 'Dongle', sans-serif;
 }
 
 .about-words h3{
@@ -315,9 +321,10 @@ body {
 
 
 .services-cards p{
-  font-size: .9rem;
+  font-size: 1.4rem;
   color: #fff;
   padding-bottom: 1rem;
+  font-family: 'Dongle', sans-serif;
 }
 
 @media only screen and (max-width:653px){
@@ -406,7 +413,7 @@ body {
   padding-bottom: 3rem;
   padding: 1.5rem;
   background-color: #fff;
-  border: 2px solid #84a59d;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   transition: all 1s ease;
   border-radius: .5rem;
 }
@@ -425,11 +432,13 @@ body {
 
 .testimonie-cards p{
   color: #777;
-  font-size: .9rem;
+  font-size: 1.4rem;
+  font-family: 'Dongle', sans-serif;
 }
 
 .testimonie-cards h6{
   text-align: right;
+  font-size: .8em;  
 }
 
 .testimonie-cards .bx{
@@ -473,10 +482,11 @@ body {
  }
 
  .connect-div p{
-  font-size: .9rem;
+  font-size: 1.4rem;
   color: #666;
-  font-weight: bold;
+  /* font-weight: bold; */
   padding-bottom: 2rem;
+  font-family: 'Dongle', sans-serif;
  }
 
 
@@ -538,7 +548,10 @@ color: #f6bd60;
   .contact-form1{
   padding-left: 4.5rem;
   margin-bottom: 3rem;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
+
+
   .contact-form1 i.fa{
     text-align: center;
     font-size: 1.3rem;
@@ -639,7 +652,7 @@ color: #f6bd60;
 /* --------------------- Footer --------------------- */
 
 .footer{
-  /*border-top: 4px solid rgb(206, 206, 206);*/
+  /* border-top: 4px solid rgb(206, 206, 206); */
   padding: 3rem;
 }
 
@@ -663,12 +676,13 @@ color: #f6bd60;
 }
 
 
-.about-footer a{
-  font-size: 1rem;
-  font-weight: bold;
-  font-family:Arial, Helvetica, sans-serif;
+.footer-brand img{
+    width: 10em;
 }
 
+.line{
+    border: 1px solid #84a59d;
+}
 
 .about-footer a b {
   color: #f6bd60;
@@ -687,9 +701,10 @@ color: #f6bd60;
 
  .about-footer p{
   padding-top: 3rem;
-  font-size: .9rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: #000;
+  font-family: 'Dongle', sans-serif;
  }
 
 .footer-links{
@@ -707,8 +722,9 @@ color: #f6bd60;
 .footer-links a{
    color: #000 !important;
    text-decoration: none !important;
-   font-weight: bold;
-   font-size: .9rem !important;
+   /* font-weight: bold; */
+   font-size: 1.5rem !important;
+   font-family: 'Dongle', sans-serif;
 }
 
 .footer-links a:hover{
@@ -728,7 +744,7 @@ color: #f6bd60;
 }
 
 .footer-socials a{
-color: #000;
+color: #555;
 padding: 0 .4rem;
 }
 
@@ -740,15 +756,17 @@ padding: 0 .4rem;
 .footer-privacy{
   padding-right: 8rem;
   padding-bottom: 3rem;
+
 }
 
 .footer-privacy a{
   color: #84a59d;
-  font-size: .9rem;
+  font-size: 1.4rem;
   float: right !important;
   font-weight: bold;
   text-decoration: none;
   text-decoration: underline;
+  font-family: 'Dongle', sans-serif;
 }
 
 .footer-privacy a:hover{
