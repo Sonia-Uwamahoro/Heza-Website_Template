@@ -112,7 +112,7 @@ body {
 }
 
 .intro b{
-  color: #f6bd60;
+  color: #999;
  
 }
 
@@ -126,6 +126,10 @@ body {
 @media only screen and (max-width:900px){
     .buttons{
         padding-top: 4em;
+      }
+      .intro b{
+        color: #555;
+       
       }
   }
   
