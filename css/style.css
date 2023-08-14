@@ -98,21 +98,21 @@ body {
 
 .intro h1{
   color: black;
-  font-size: 4.4rem;
+  font-size: 6rem;
   padding-bottom: 5px;
   padding-top: 100px;
-  padding-right: 14.5rem;
+  padding-right: 19.9rem;
 }
 
 .intro h3{
   color: black;
-  font-size: 4.4rem;
+  font-size: 6rem;
   padding-bottom: 5px;
-  padding-right: 1.4rem;
+  padding-right: 1rem;
 }
 
 .intro b{
-  color: #999;
+  color: #fff;
  
 }
 
@@ -305,7 +305,7 @@ body {
 }
 
 .services-div .services-cards>div:hover{
-  background: #f6bd60;
+  background: #84a59d88;
   color: #000;
   }
 
@@ -397,6 +397,10 @@ body {
   font-size: 1.7rem;
   font-weight: bold;
   padding-bottom: 1.5rem;
+}
+
+.card{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .testimonie-cards{
@@ -512,8 +516,13 @@ body {
 
 .search-box i {
 position: relative;
-left: 30px;
+font-size: 2em;
+left: 1.5em;
 color: #f6bd60;
+top: .3em;
+/* background-color: black; */
+border-radius: 2em;
+padding: .23em;
 }
 
 
@@ -540,7 +549,7 @@ color: #f6bd60;
 
 .contact-form .contact-section{
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 50% 50%;
   }
   .contact-form .contact-section{
   width: 100%;
@@ -563,13 +572,13 @@ color: #f6bd60;
     padding: 8px;
     height: 40px;
     width: 40px;
-    color: #f6bd60;
+    color: #000;
     border-radius: 50%;
   
   }
   .contact-form1 i.fa:hover{
   transform: scale(1.1);
-  color: black;
+  color: #f6bd60;
   
   }
   
@@ -583,6 +592,7 @@ color: #f6bd60;
   
   .contact-form2{
   margin-bottom: 4rem;
+  margin-left: 4em;
   }
   
  .contact-form2 input{
@@ -590,8 +600,8 @@ color: #f6bd60;
   margin: 10px;
   width: 90%;
   color: black;
-  border: 2px solid #84a59d;
-  border-radius: .5rem;
+  border: 2px solid #999;
+  /* border-radius: .5rem; */
   outline: none;
   
   }
@@ -605,8 +615,8 @@ color: #f6bd60;
   padding: 10px;
   margin: 10px;
   width: 90%;
-  border: 2px solid #84a59d;
-  border-radius: .5rem;
+  border: 2px solid #999;
+  /* border-radius: .5rem; */
   color: black;
   outline: none;
   }
@@ -629,7 +639,7 @@ color: #f6bd60;
   margin-left: .7rem;
   background-color: #f6bd60;
   border: 2px solid #f6bd60;
-  border-radius: .5rem;
+  /* border-radius: .5rem; */
   color: #fff;
   }
   .submit-form:hover{
